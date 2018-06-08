@@ -8,7 +8,6 @@ N=2000
 conversions = {'best':0.06,'medium':0.05,'low':0.03}
 result_dict = dict()
 for group, conversion in conversions.iteritems():
-    out = []
     for i in range(N):
         if random.random() > conversion:
             out.append(0)
